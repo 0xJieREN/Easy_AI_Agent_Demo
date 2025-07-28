@@ -6,6 +6,7 @@
 A simple yet powerful AI agent system based on the DeepSeek large language model, capable of performing file operations and intelligent conversations.
 
 <!--  -->
+
 ## Features
 
 - 🤖 Intelligent Conversations with DeepSeek LLM
@@ -33,9 +34,12 @@ A simple yet powerful AI agent system based on the DeepSeek large language model
 1. Clone the repository and install dependencies:
 
 ```bash
-git clone 
+git clone https://github.com/0xJieREN/Easy_AI_Agent_Demo.git
 cd Easy-AI-Agent-Demo
-pip install -r requirements.txt
+# if you have the `uv` tool installed.
+uv pip sync pyproject.toml
+# or use pip directly
+pip install -r pyproject.toml
 ```
 
 2. Set up environment variables:
@@ -49,6 +53,8 @@ OPENAI_API_KEY=your_api_key_here
 
 ```bash
 python main.py
+# if you have the `uv` tool installed.
+uv run main.py
 ```
 
 ## Usage
